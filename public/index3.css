@@ -1,0 +1,1133 @@
+/*Universal Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    
+  }
+  
+  html {
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  /* Style Header Section and navbar*/
+  
+  .header {
+  border-bottom: 1 px solid #E2E8F0;
+  
+  }
+  
+  .navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.5rem;
+   }
+  
+  /* Hamburger styles*/
+  
+  .hamburger{
+    display: none;
+  }
+  
+  .bar{
+  
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all ease-in-out;
+  background-color: #101010;
+  
+  }
+  
+  /* basic styles for our other styles*/
+  
+  .nav-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+  
+  .nav-item{
+  margin-left: 5rem;
+  
+  }
+  
+  .nav-link{
+    font-size: 2.1rem;
+    font-weight:400;
+    color: #101010;
+  }
+  
+  .nav-link:hover{
+    color: #999;
+  }
+  
+  .nav-logo{
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #CC4C4C;
+  
+  
+  }
+  
+  /* make it responsive with media queries*/
+  
+  @media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 18rem;
+        flex-direction: column;
+        background-color: rgb(110, 57, 57);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    .nav-menu.active {
+        left: 0;
+        
+    }
+  
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  
+  }
+  
+  
+  /*Contact Section*/
+  
+  .container5{
+  
+    width: 525px;
+    background: rgb(0,0,0);
+    /* Center the form on the page */
+    margin: 0 auto;
+    /* Form outline */
+  padding: 5px;
+  border: 1px solid #CCC;
+  border-radius: 1px;
+  }
+  
+  form h1{
+    color:white;
+    text-align: center;
+    margin: 5px;
+  
+  }
+  
+  .inp{
+  
+    margin: 10px 25px;
+  }
+  
+  input{
+    color: black;
+    height: 40px;
+    width: 280px;
+   
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 20px;
+    background: #000;
+  }
+  
+  .input:focus{
+
+    outline:none;
+    border-color: rgba(0, 0, 0, 0.3);
+
+  }
+
+  .form-field{
+    margin-bottom: 10px;
+  }
+
+  .error, .errors-list {
+    font-size: 14px;
+    color: #C00;
+  }
+  .errors-list {
+    margin: 0 0 1.5em;
+    padding: 0 0 0 15px;
+  }
+
+  .form-actions {
+    margin-top: 20px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #24b47e;
+    border: 1px solid rgba(0,0,0,.1);
+    border-width: 1px 1px 3px;
+    border-radius: 3px;
+    font: inherit;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 1px 0 rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.2);
+  }
+  .btn:hover,
+  .btn:focus {
+    outline: none;
+    background: #2AA172;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .flash {
+    padding: 15px 20px;
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  .flash-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+
+
+
+
+  textarea{
+    height: 240px;
+    width: 280px;
+    color: white;
+    background: #000;
+    margin: 10px 0;
+    padding: 10px 10px;
+    font-size: 20px;
+     /* Provide space to type some text */
+     height: 5em;
+  }
+  
+  .submit button{
+  height: 40px;
+  width: 100px;
+  background: #0489EE;
+  color: white;
+  font-size: 20px;
+  font-weight: 650;
+  cursor: pointer;
+  
+  }
+  
+  ::placeholder{
+    color: white;
+  }
+  /*store name section*/
+  
+  .main1{
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+    font-size: x-large;
+    }
+  
+  #store{
+    
+    width: 1200px;
+  margin: auto;
+    padding-top: 30px;
+  
+  }
+  
+    
+    .item1{
+      padding: 5px;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    
+    .item1 img{
+    height: 500px;
+    width: 300px;
+    margin: 10px;
+    display: block;
+    border-style: solid;
+    border-color: seashell;
+    border-width: 1px;
+    position: relative;
+    }
+    
+    .text1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+    }
+    
+  
+  
+  /*mission statement section*/
+  #mission{
+   
+    width: 1200px;
+  margin: auto;
+    padding-top: 70px;
+  text-align: center;
+  font-size: x-large;
+  }
+  
+  .item2{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .item2 .color{
+  height: 550px;
+  width: 500px;
+  margin: 10px;
+  display: block;
+  border-style: solid;
+  border-color: seashell;
+  border-width: 1px;
+  position: relative;
+  background-color: black;
+  }
+  
+  .text2{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+  }
+  
+  .item7{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+  
+  }
+  
+  .item7 img{
+    height: 550px;
+    width: 500px;
+    margin: 10px;
+    display: block;
+    border-style: solid;
+    border-color: seashell;
+    border-width: 1px;
+    position: relative;
+  
+  
+  }
+  
+  
+  .text7{
+  position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+  }
+  
+  
+  .item4{
+  display: flex;
+  flex-wrap: wrap;
+   padding: 5px;
+  
+  }
+  
+  
+  .item4 img{
+    height: 350px;
+    width: 350px;
+    margin: 5px;
+   
+    
+    }
+  
+    .item5{
+      padding: 5px;
+  
+      text-align: center;
+      color:blue;
+  
+    }
+  
+    .testify{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%, -50%)
+      }
+  /*contact section*/
+  
+  #contact{
+   
+    width: 1200px;
+  text-align: center;
+    padding-top: 70px;
+  
+  }
+  .item3{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .item3 img{
+  height: 600px;
+  width: 300px;
+  margin: 10px;
+  display: block;
+  border-style: solid;
+  border-color: seashell;
+  border-width: 1px;
+  position: relative;
+  }
+  
+  .text3{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%)
+  }
+  
+  footer{
+  
+    text-align: center;
+  }
+  
+  #contactus{
+    text-align:center;
+  }
+  
+  /*form section*/
+.form-header{
+width: 100%;
+max-width: 500px;
+
+ }
+
+  form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    max-width: 500px;
+    /* Form outline */
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  label {
+display: block;
+padding-bottom: 3px;
+font-size: 12px;
+font-weight: bold;
+color: #555;
+
+
+  }
+.input {
+
+width: 100%;
+margin-bottom: 5px;
+padding: 10px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 3px;
+background: #fff;
+font: inherit;
+
+}
+
+ /* ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }*/
+  
+  /*form li + li {
+    margin-top: 1em;
+  }*/
+  
+  label {
+    /* Uniform size & alignment */
+    display: block;
+   padding-bottom: 3px;
+   font-size: 12px;
+   font-weight: bold;
+   color: #555;
+
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: seashell;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+  
+  /*shopping cart section-nav bar*/
+  
+  .dropdown {
+    
+    overflow: hidden;
+   float: left;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:rgb(129, 61, 61);
+    padding: 14px 16px;
+    background-color: white;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 340px;
+   
+    box-shadow: 0px 8px 16px 0px rgba(143, 106, 106, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: seashell;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  
+  #myDIV{
+   text-align:center;
+  }
+  
+  
+  
+  
+  /* Make the image responsive*/
+  
+  
+   .btn:hover {
+    background-color: seashell;
+  }
+  
+   body {font-family: Arial, Helvetica, sans-serif;}
+  
+  
+  
+  /* Make the image responsive*/
+  
+  
+   .btn:hover {
+    background-color: black;
+  }
+  
+   /*Product section */
+  
+  .shop-items{
+   display: flex;
+   background-color: grey;
+   flex-wrap: wrap;
+    display: flex;
+  
+  }
+  .shop-item{
+     padding: 5%;
+    flex-grow: 1;
+   flex-direction: column;
+    align-items: center;
+  text-align: center;
+    display: inline-flex;
+  }
+  
+  
+  
+  
+  
+  .shop-item-img{
+    max-width: 100%;
+   
+  }
+  
+  .shop-item-title{
+   font-weight: 400;
+    font-size: 28px;
+   position: absolute;
+   
+  }
+  
+  
+  
+  div.shop-item-price{
+  font-size: 24px;
+    flex-grow: 1;
+    
+  }
+  
+  .btn {
+  color: seashell;
+    font-size:24px;
+    background-color: sienna;
+    margin-bottom: 0 auto;
+  }
+  
+  
+  @media (max-width: 920px) {
+    .shop-item {
+      flex: 1 21%;
+    }
+  }
+    @media (max-width: 900px){
+  /*Select the first two */
+  .shop-items .shop-item:first-child, 
+  .shop-items .shop-item:nth-child(2) {
+    flex: 2 46%;
+      /*grow 2 and take up 46% of page at 900px*/
+  }
+    }
+  
+  @media (max-width: 600px) {
+    .shop-item {
+      flex: 1 46%;
+      /*grow 1 and take up 46% of page at 600px*/
+    }
+   
+  
+  
+  }
+  
+  
+  .cart {
+  
+    background-color: lightgrey;
+    min-width: 250px;
+  min-height: 250px;
+       padding: 5px 5px;
+    border: 2px solid black;
+      background: lightgrey;
+      
+     
+  }
+  
+  
+  h2{
+    text-align: center;
+  }
+  .section-header{
+     font-family: "Arial";
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+      font-size: 1.5em;
+  }
+  
+  .cart ,.shop-items {
+    
+    margin: 5px;
+  }
+  
+  
+  
+  .cart-header {
+      font-weight: bold;
+      font-size: 0.9em;
+      color: #333;
+  }
+  
+  .cart-column {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid black;
+      margin-right: 2.0em;
+      padding-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  .cart-row {
+      display: flex;
+  }
+  
+  .cart-item {
+      width: 33%;
+  }
+  
+  .cart-price {
+      width: 15%;
+     
+      color: #333;
+  }
+  
+  .cart-quantity {
+      width: 68%;
+    overflow: hidden;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button {
+      opacity: 1
+  }
+  
+  .cart-item-title {
+      color: #333;
+      margin-left: 0.5em;
+      font-size: 1.0em;
+  }
+  
+  .cart-item-image {
+      width: 70px;
+      height: auto;
+      border-radius: 10px;
+  }
+  
+  .checkout{
+    
+     text-align: end;
+      margin-top: 30px;
+      margin-right: 10px;
+    
+  }
+  
+  .btn-danger {
+      color: white;
+      background-color: #EB5757;
+      border: none;
+      border-radius: .1em;
+      font-weight: bold;
+    
+  }
+  
+  .btn-danger:hover {
+      background-color: #CC4C4C;
+  }
+  
+  .cart-quantity-input {
+   
+      text-align: end;
+      margin-top: 10px;
+      margin-right: 30px;
+   
+  }
+  
+  
+  
+  .cart-row:last-child {
+      border-bottom: 1px solid black;
+  }
+  
+  .cart-row:last-child .cart-column {
+      border: none;
+  }
+  
+  
+  .col1{
+     margin: 0px;
+    text-align: left;
+    
+  }
+  
+   .cart-tax-price {
+      color: #333;
+      font-size: 0.8em;
+    float: right;
+     
+  }
+  
+  
+  .cart-total-price {
+      color: #333;
+      font-size: 0.8em;
+   float: right;
+  }
+  
+  .totals-value, .fee-totals-value, .tax-totals-value, .subtotal-totals-value, .tip-totals-value, .tip_pct-totals-value{
+     color: #333;
+      font-size: 0.9em;
+    float: right;
+    
+  }
+  
+  table, tr, td {
+    border: 1px solid rgb(155, 91, 91);
+     border-collapse: collapse;
+  }
+  
+  
+  
+  
+  
+  
+  .flex-container{
+     display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  .container content-section-left{
+    
+   
+   
+    flex: 50%;
+   
+  }
+  
+  .container content-section-right{
+     
+  
+    flex: 50%;
+  
+  
+  }
+  
+  
+  
+    body {
+    background: url("https://images-na.ssl-images-amazon.com/images/I/714zBfO91PL._AC_SX355_.jpg");
+  }
+  
+  
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .supporting,
+  .rating,
+  .gallery,
+  .location {
+    margin: 4em auto;
+  }
+  
+  .supporting {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+  
+  .supporting img {
+  width: 100%;
+  height: 100%;
+  margin-right: 5%;  
+  
+  }
+  
+  .rating {
+    background-color: OrangeRed;
+    height: 20rem;
+    padding: 0 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rating h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  }
+  h2{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .gallery img {
+    display: block;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+  
+  .location {
+    text-align: center;
+    margin-bottom: 7rem;
+    position: relative;
+    color: white;
+  }
+  
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .location img {
+  width: 100%;
+  }
+  
+  footer {
+    background-color: springgreen;
+    padding: 0 1rem;
+  }
+  
+  footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 0;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 960px) {
+  .main {
+      padding-top: 0;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .supporting img {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 470px) {
+    .rating h1{
+      font-size: 2rem;
+    }
+    .gallery img{
+      
+      width: 100%;
+      margin: 0;
+    }
+    
+    footer nav{
+      display: none;
+      text-align: center;
+    }
+  }
+  
+  .container-photos{
+    /* Arrange children using flexbox */
+    display: flex;
+    /* ALlow images to display on multiple lines rather than a single line */
+    flex-wrap: wrap;
+    /* Container should take up only 90% of the browser, leave 5% space on each side */
+    width: 90%;
+    /* Center container */
+    margin: 0 auto;
+  
+  }
+  
+  .container-photos .grid-image{
+  
+    width: 300px;
+    height: 300px;
+  }
+  
+  .grid-image {
+    /* images display inline by default and act like text. We want them to act like divs, so display block */
+    display: block;
+    /* our width setting for mobile, one image per line */
+    flex-basis: 100%;
+    /* provide some space between our images */
+    padding: 10px;
+    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    box-sizing: border-box;
+  }
+   
+  /* increase images per line as browser gets larger using media queries
+     this first query makes two images per line at 640px width */
+  @media only screen and (min-width: 640px) {
+    .grid-image {
+      flex-basis: 50%;
+    }
+  }
+   
+  /* three images per line when browser width exceeds 960px */
+  @media only screen and (min-width: 960px) {
+    .grid-image {
+      flex-basis: 33.333%;
+    }
+  }
+   
+  /* four images per line when browser width exceeds 1280px */
+  @media only screen and (min-width: 1280px) {
+    .grid-image {
+      flex-basis: 25%;
+    }
+  }
+   
+  /* five images per line when browser width exceeds 1600px */
+  @media only screen and (min-width: 1600px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+  }
+  
+  .container-content{
+  
+   /* Arrange children using flexbox */
+   display: flex;
+   /* ALlow images to display on multiple lines rather than a single line */
+   flex-wrap: wrap;
+   /* Container should take up only 90% of the browser, leave 5% space on each side */
+   width: 90%;
+   /* Center container */
+   margin: 0 auto;
+  
+  
+  }
+  
+  .colorful  {
+    /* images display inline by default and act like text. We want them to act like divs, so display block */
+    display: block;
+    /* our width setting for mobile, one image per line */
+    flex-basis: 100%;
+    /* provide some space between our images */
+    padding: 10px;
+    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    box-sizing: border-box;
+    position: relative;
+    background-color: brown;
+    z-index: -1;
+  }
+  
+  .container-content .colorful{
+  
+    width: 400px;
+    height: 400px;
+  
+  
+  }
+  
+  /* Centered text */
+  .centerme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+  }
+  
+  /* increase images per line as browser gets larger using media queries
+     this first query makes one image per line at 640px width */
+     @media only screen and (min-width: 640px) {
+      .colorful {
+        flex-basis: 95%;
+      }
+    }
+     
+    /* four images per line when browser width exceeds 960px */
+    @media only screen and (min-width: 960px) {
+      .colorful {
+        flex-basis: 95%;
+      }
+    }
+     
+    /* one image per line when browser width exceeds 1280px */
+    @media only screen and (min-width: 1280px) {
+      .colorful {
+        flex-basis: 95%;
+      }
+    }
+     
+    /* one image per line when browser width exceeds 1600px */
+    @media only screen and (min-width: 1600px) {
+      .colorful {
+        flex-basis: 95%;
+      }
+    }
